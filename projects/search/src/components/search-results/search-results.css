@@ -1,0 +1,27 @@
+:host {
+  display: block;
+  padding: 2rem 3rem;
+
+  --bg-color:#f4f4f8;
+  --text-color: #3c4047;
+  --item-bg-color: #fff;
+  --item-header-color: #3c4047;
+  --item-text-color: #3c4047;
+
+  background-color: var(--bg-color);
+}
+
+.empty {
+  text-align: center;
+  color: var(--text-color);
+  font-weight: bold;
+  font-size: 120%;
+}
+
+.results search-item {
+  margin: 4rem 0;
+
+  --bg-color: var(--item-bg-color);
+  --header-color: var(--item-header-color);
+  --text-color: var(--item-text-color);
+}

@@ -1,0 +1,10 @@
+:host {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+
+select {
+  margin: 0 10px;
+}

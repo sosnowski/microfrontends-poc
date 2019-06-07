@@ -1,0 +1,46 @@
+:host {
+  --bg-color: #f4f4f8;
+  --main-text-color: #3c4047;
+  --secondary-text-color: #2ab7ca;
+
+  margin: 0;
+  padding: 0.5rem 1rem;
+
+  background: var(--bg-color);
+  color: var(--main-text-color);
+  border-bottom: 1px solid #e6e6ea;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  box-sizing: border-box;
+  align-items: center;
+}
+
+h1 {
+  font-size: 100%;
+  font-weight: bold;
+  margin:0;
+  padding: 0;
+  margin-right: 2rem;
+  flex: 1;
+}
+
+.menu span {
+  display: inline-block;
+  text-decoration: underline;
+  margin: 0 1rem;
+  cursor: pointer;
+}
+
+.menu span:hover {
+  color: var(--secondary-text-color);
+}
+
+.menu span.user-link {
+  color: var(--secondary-text-color);
+}
+
+header-theme-switcher {
+  margin: 0 10px;
+}

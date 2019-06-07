@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Microfrontends POC</title>
+  <meta name="Description" content="Welcome to the Stencil App Starter. You can use this starter to build entire apps all with web components using Stencil!">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0">
+  <meta name="theme-color" content="#16161d">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta http-equiv="x-ua-compatible" content="IE=Edge"/>
+
+  <link href="/build/app.css" rel="stylesheet">
+  <script type="module" src="/build/app.esm.js"></script>
+  <script nomodule src="/build/app.js"></script>
+  <script type="module" src="http://localhost:8801/build/header.esm.js"></script>
+  <script nomodule src="http://localhost:8801/build/header.js"></script>
+
+  <script type="module" src="http://localhost:8805/build/user.esm.js"></script>
+  <script nomodule src="http://localhost:8805/build/user.js"></script>
+
+  <script type="module" src="http://localhost:8802/build/search.esm.js"></script>
+  <script nomodule src="http://localhost:8802/build/search.js"></script>
+
+  <script type="module" src="http://localhost:8803/build/promoted.esm.js"></script>
+  <script nomodule src="http://localhost:8803/build/promoted.js"></script>
+
+  <link rel="apple-touch-icon" href="/assets/icon/icon.png">
+  <link rel="icon" type="image/x-icon" href="/assets/icon/favicon.ico">
+  <link rel="manifest" href="/manifest.json">
+</head>
+<body>
+
+  <app-root></app-root>
+
+</body>
+</html>

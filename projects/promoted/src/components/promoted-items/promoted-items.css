@@ -1,0 +1,42 @@
+* {
+  box-sizing: border-box;
+}
+
+:host {
+  --bg-color:#f4f4f8;
+  --text-color: #3c4047;
+  --item-bg-color: #fff;
+  --item-header-color: #3c4047;
+  --item-text-color: #3c4047;
+
+  display: block;
+  background: var(--bg-color);
+  padding: 1rem;
+}
+
+h1 {
+  font-size: 110%;
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
+  color: var(--text-color);
+}
+
+.items {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-content: stretch;
+  justify-items: stretch;
+  justify-content: flex-start;
+  overflow: hidden;
+  margin: 1rem 0;
+}
+
+.items > promoted-item {
+  flex: 1;
+  margin: 5px;
+  --bg-color: var(--item-bg-color);
+  --header-color: var(--item-header-color);
+  --text-color: var(--item-text-color);
+}

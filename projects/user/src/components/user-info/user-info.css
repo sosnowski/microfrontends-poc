@@ -1,0 +1,25 @@
+:host {
+  display: block;
+  margin-left: 2rem;
+
+  --popup-bg-color: #fff;
+  --popup-text-color: rgb(28, 41, 56);
+}
+
+.login {
+  border: 0;
+  border-radius: 4px;
+  background: #2ab7ca;
+  padding: 0.5rem 2rem;
+  cursor: pointer;
+}
+
+.hi {
+  color: #2ab7ca;
+  font-weight: bold;
+}
+
+user-login-popup {
+  --bg-color: var(--popup-bg-color);
+  --text-color: var(--popup-text-color);
+}

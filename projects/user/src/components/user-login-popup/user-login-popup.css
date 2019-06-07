@@ -1,0 +1,80 @@
+:host {
+  --bg-color: #fff;
+  --text-color: rgb(28, 41, 56);
+}
+
+.glass {
+  background: #e6e6eaaa;
+  display: none;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left:0;
+  z-index: 999;
+}
+
+.glass.visible {
+  display: block;
+}
+
+.modal {
+  display: none;
+  margin: 20% auto;
+  background-color: var(--bg-color);
+  width: 350px;
+  border-radius: 5px;
+  z-index: 9999;
+  position: fixed;
+  top: 20%;
+  left: calc(50% - 175px);
+  z-index: 1000;
+  color: var(--text-color);
+}
+
+.modal.visible {
+  display: block;
+}
+
+.modal header {
+  background: #2ab7ca;
+  border-radius: 5px 5px 0 0;
+  padding: 0.5rem;
+  color: #fff;
+  font-weight: bold;
+  text-align: center;
+}
+
+.modal section {
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+.modal section input {
+  width:90%;
+  height: 1.5rem;
+  border-radius: 4px;
+  border: 1px solid #e6e6ea;
+}
+
+.modal footer {
+  text-align: center;
+}
+
+.modal footer button {
+  border: 0;
+  border-radius: 4px;
+  background: #2ab7ca;
+  padding: 0.5rem 2rem;
+  cursor: pointer;
+  margin: 0.5rem;
+}
+
+.modal footer button.close {
+  background: #e6e6ea;
+}
+
+
+.modal input {
+  width: 80%;
+}

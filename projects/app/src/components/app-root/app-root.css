@@ -1,0 +1,98 @@
+:host {
+  --app-bg-color: rgb(230, 236, 240);
+  --header-bg-color: rgb(230, 236, 240);
+  --promoted-bg-color: rgb(230, 236, 240);
+  --promoted-item-bg-color: rgb(255, 255, 255);
+  --search-bg-color: rgb(255, 255, 255);
+  --search-item-bg-color: rgb(230, 236, 240);
+  --text-primary-color: rgb(10, 10, 10);
+  --text-secondary-color: rgb(101, 119, 134);
+  --login-bg-color: rgb(230, 236, 240);
+
+
+  display: grid;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  grid-template-columns: auto 300px;
+  grid-template-rows: 50px auto auto auto;
+  grid-template-areas:
+    "header header"
+    "search search"
+    "promoted promoted"
+    "results results";
+  grid-gap: 0;
+  justify-items: stretch;
+  align-items: stretch;
+
+  justify-content: stretch;
+  align-content: start;
+  background-color: var(--app-bg-color);
+  color: var(--text-primary-color);
+}
+
+:host.dark {
+  --app-bg-color: rgb(16, 23, 30);
+  --header-bg-color: rgb(28, 41, 56);
+  --promoted-bg-color: rgb(56, 68, 77);
+  --promoted-item-bg-color: rgb(28, 41, 56);
+  --search-bg-color: rgb(16, 23, 30);
+  --search-item-bg-color: rgb(28, 41, 56);
+  --text-primary-color: rgb(255, 255, 255);
+  --text-secondary-color: rgb(136, 153, 166);
+  --login-bg-color: rgb(56, 68, 77);
+}
+
+:host.domains {
+  --app-bg-color: rgb(16, 23, 30);
+  --header-bg-color: rgb(244, 118, 65);
+  --promoted-bg-color: rgb(130, 1, 31);
+  --promoted-item-bg-color: rgb(130, 1, 31);
+  --search-bg-color: rgb(76, 65, 244);
+  --search-item-bg-color: rgb(76, 65, 244);
+  --text-primary-color: rgb(255, 255, 255);
+  --text-secondary-color: rgb(136, 153, 166);
+  --login-bg-color: rgb(28, 129, 142);
+}
+
+
+header-top-bar {
+  grid-area: header;
+  --bg-color: var(--header-bg-color);
+  --main-text-color: var(--text-primary-color);
+  --secondary-text-color: var(--text-secondary-color);
+}
+search-bar {
+  grid-area: search;
+  --bg-color: var(--search-bg-color);
+  --text-color: var(--text-secondary-color);
+}
+
+promoted-items {
+  grid-area: promoted;
+
+  --bg-color: var(--promoted-bg-color);
+  --text-color: var(--text-primary-color);
+  --item-bg-color: var(--promoted-item-bg-color);
+  --item-header-color: var(--text-primary-color);
+  --item-text-color: var(--text-secondary-color);
+}
+
+search-results {
+  grid-area: results;
+
+  --bg-color: var(--search-bg-color);
+  --text-color: var(--text-primary-color);
+  --item-bg-color: var(--search-item-bg-color);
+  --item-header-color: var(--text-primary-color);
+  --item-text-color: var(--text-secondary-color);
+}
+
+suggest-items {
+  grid-area: suggest;
+}
+
+user-info {
+  --popup-bg-color: var(--login-bg-color);
+  --popup-text-color: var(--text-primary-color);
+}
